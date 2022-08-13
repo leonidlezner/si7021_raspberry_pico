@@ -1,0 +1,21 @@
+{
+    "version": "0.3.0",
+    "configurations": [
+        {
+            "name": "Pico Remote Debug",
+            "type": "cortex-debug",
+            "cwd": "${workspaceRoot}",
+            "executable": "${command:cmake.launchTargetPath}",
+            "request": "launch",
+            "servertype": "external",
+            "gdbPath": "arm-none-eabi-gdb",
+            "gdbTarget": "192.168.178.194:3333",
+            "svdFile": "${workspaceRoot}/vendor/pico-sdk/src/rp2040/hardware_regs/rp2040.svd",
+            "runToEntryPoint": "main",
+            "postRestartCommands": [
+                "break main",
+                "continue",
+            ]
+        }
+    ]
+}

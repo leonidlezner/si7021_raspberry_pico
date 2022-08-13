@@ -1,0 +1,26 @@
+{
+    "cmake.environment": {
+        "PICO_SDK_PATH": "${workspaceRoot}/vendor/pico-sdk",
+        "PIMORONI_PICO_PATH": "${workspaceRoot}/vendor/pimoroni-pico/",
+    },
+    "cmake.statusbar.advanced": {
+        "debug": {
+            "visibility": "hidden"
+        },
+        "launch": {
+            "visibility": "hidden"
+        },
+        "build": {
+            "visibility": "default",
+        },
+        "buildTarget": {
+            "visibility": "hidden"
+        }
+    },
+    "cmake.configureOnOpen": false,
+    "files.associations": {
+        "*.html": "html",
+        "stdlib.h": "c",
+        "stdio.h": "c"
+    }
+}
