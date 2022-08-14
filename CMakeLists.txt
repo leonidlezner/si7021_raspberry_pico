@@ -17,18 +17,16 @@ pico_sdk_init()
 add_executable(${project_name})
 
 target_sources(${project_name} PUBLIC
-    src/Adafruit_Pico_I2CDevice.cpp
-    src/Adafruit_Pico_Si7021.cpp
     src/main.cpp
 )
 
 target_include_directories(${project_name} PUBLIC src/)
 
-target_link_libraries(${project_name} pico_stdlib hardware_i2c)
+target_link_libraries(${project_name} pico_stdlib Adafruit_Pico)
 
 pico_enable_stdio_usb(${project_name} 0)
 pico_enable_stdio_uart(${project_name} 1)
 
 pico_add_extra_outputs(${project_name})
 
-
+add_subdirectory(src/Adafruit_Pico)

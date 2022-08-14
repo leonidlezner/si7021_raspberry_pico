@@ -22,7 +22,7 @@
 #ifndef __Si7021_H__
 #define __Si7021_H__
 
-#include <Adafruit_Pico_I2CDevice.h>
+#include <Adafruit_Pico/Adafruit_Pico_I2CDevice.h>
 
 #define NAN (__builtin_nan(""))
 #define bitRead(value, bit) (((value) >> (bit)) & 0x01)
